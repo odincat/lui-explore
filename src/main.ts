@@ -1,29 +1,31 @@
-import lui, { node, node_dom } from './etc/lui';
+import { hook_dom, init, node, node_dom } from 'lui';
+import { Infobox } from './components/Infobox';
 import './styles/main.css';
 
 const Hero = () => {
+  hook_dom('div[className=hero-section]');
+
   return [
-    node_dom('div', {
-      F: {
-        "hero-section": true
-      },
-      C: [
-        node_dom('h1', {
-          innerText: 'lui Explore'
-        }),
-        node_dom('h2', {
-          innerText: 'Get to know lui'
-        })
-      ]
+    node_dom('h1', {
+      innerText: 'lui Explore'
+    }),
+    node_dom('h2', {
+      innerText: 'Get to know lui'
     })
-  ]
+  ];
 }
 
-lui.init(() => {
+init(() => {
   return [
     null,
     [
-      node(Hero)
+      node_dom('div[id=pageroot]', {}, [
+        node(Hero),
+        node(Infobox, {
+          content: 'Inhalt ...',
+          title: 'Titel'
+        })
+      ])
     ]
   ]
 });

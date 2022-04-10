@@ -12,6 +12,7 @@ body {
     color: white;
     font-family: 'Open Sans';
     font-size: 16px;
+    height: 100vh;
 }
 
 .hero-section {
@@ -26,5 +27,33 @@ body {
 
     @include headings {
         text-align: center;
+    }
+}
+
+#pageroot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.infobox {
+    width: max-content;
+    border: solid 2px #30AADD;
+    padding: 15px;
+    background-color: #30AADD70;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+
+    .infobox-title {    
+        margin-bottom: 5px;
+        &::before {
+            content: url('/src/assets/info.svg');
+            display: inline-block;
+            width: 1em;
+            margin-right: 7px;
+            fill: rebeccapurple;
+        }
     }
 }

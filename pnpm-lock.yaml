@@ -2,8 +2,12 @@ lockfileVersion: 5.3
 
 specifiers:
   concurrently: ^7.1.0
+  lui: github:l3p3/lui
   sass: ^1.50.0
   vite: ^2.9.0
+
+dependencies:
+  lui: github.com/l3p3/lui/8189a1d2084a1c442f92b4ec1313594e3057f1ec
 
 devDependencies:
   concurrently: 7.1.0
@@ -583,3 +587,9 @@ packages:
       y18n: 5.0.8
       yargs-parser: 20.2.9
     dev: true
+
+  github.com/l3p3/lui/8189a1d2084a1c442f92b4ec1313594e3057f1ec:
+    resolution: {tarball: https://codeload.github.com/l3p3/lui/tar.gz/8189a1d2084a1c442f92b4ec1313594e3057f1ec}
+    name: lui
+    version: 1.2.3
+    dev: false
