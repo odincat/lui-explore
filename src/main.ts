@@ -2,6 +2,7 @@ import { hook_dom, init, node, node_dom } from 'lui';
 
 import '@styles/main.css';
 import { Infobox } from '@components/Infobox';
+import { ContactForm } from '@components/ContactForm';
 
 const Hero = () => {
   hook_dom('div[className=hero-section]');
@@ -25,7 +26,11 @@ init(() => {
         node(Infobox, {
           content: 'Inhalt ...',
           title: 'Titel'
-        })
+        }),
+        node_dom('h3', {
+          innerText: 'Form example'
+        }),
+        node(ContactForm)
       ])
     ]
   ]

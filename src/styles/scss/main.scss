@@ -44,7 +44,8 @@ body {
     background-color: #30AADD70;
     margin-top: 20px;
     margin-bottom: 20px;
-
+    margin-left: auto;
+    margin-right: auto;
 
     .infobox-title {    
         margin-bottom: 5px;
@@ -55,5 +56,27 @@ body {
             margin-right: 7px;
             fill: rebeccapurple;
         }
+    }
+}
+
+#cf {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .cf-input, .cf-textarea, .cf-button {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .cf-input {
+        border: none;
+        padding: 5px 10px 5px 10px;
+    }
+
+    .cf-textarea {
+        padding: 5px;
     }
 }
