@@ -12,7 +12,8 @@
   "devDependencies": {
     "concurrently": "^7.1.0",
     "sass": "^1.50.0",
-    "vite": "^2.9.0"
+    "vite": "^2.9.0",
+    "vite-tsconfig-paths": "^3.4.1"
   },
   "dependencies": {
     "lui": "github:l3p3/lui"

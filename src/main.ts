@@ -1,6 +1,7 @@
 import { hook_dom, init, node, node_dom } from 'lui';
-import { Infobox } from './components/Infobox';
-import './styles/main.css';
+
+import '@styles/main.css';
+import { Infobox } from '@components/Infobox';
 
 const Hero = () => {
   hook_dom('div[className=hero-section]');

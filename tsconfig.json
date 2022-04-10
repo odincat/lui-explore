@@ -11,8 +11,20 @@
     "esModuleInterop": true,
     "noEmit": true,
     "noUnusedLocals": true,
-    "noUnusedParameters": false,
-    "noImplicitReturns": true
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "baseUrl": "./",
+    "paths": {
+      "@assets/*": [
+        "src/assets"
+      ],
+      "@components/*": [
+        "src/components/*"
+      ],
+      "@styles/*": [
+        "src/styles/*"
+      ]
+    }
   },
   "include": ["src"]
 }
