@@ -18,7 +18,7 @@ export const ContactForm = () => {
             id: 'cf',
         }, [
             node_dom('input[type=text][className=cf-input][placeholder=Name]', {
-                onchange: handleChange
+                oninput: handleChange
             }),
             node_dom('textarea[className=cf-textarea][placeholder=Deine Nachricht]'),
             node_dom('button[type=submit][className=cf-button][innerText=Submit]', {
