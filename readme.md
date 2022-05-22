@@ -5,6 +5,9 @@ or
 `pnpm install`
 2. Run vite dev server & sass: `npm run dev:all`
 
+
+## TODO:
+- optimize bundle
 ## Built with
 - [lui](https://github.com/l3p3/lui)
 - [Vite](https://vitejs.dev/)

@@ -1,0 +1,40 @@
+@import 'fonts';
+@import 'utils';
+
+.navigation {
+    width: 100%;
+    background-color: #3A3845;
+    padding: 10px;
+    display: flex;
+
+    .branding {
+        display: inline-block;
+        font-weight: bold;
+        background: rgb(26,104,200);
+        background: linear-gradient(90deg, rgba(26,104,200,1) 0%, rgba(121,9,118,1) 100%); 
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-transform: uppercase;
+        -webkit-text-stroke: 1px white;
+        letter-spacing: 2px;
+    }
+
+    .nav-items {
+        display: inline-block;
+        margin-left: auto;
+        .nav-item {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 10px;
+            
+            &:hover {
+                text-decoration: overline;
+            }
+
+            &.active {
+                color: rgb(43, 123, 222);
+            }
+        }
+    }
+}

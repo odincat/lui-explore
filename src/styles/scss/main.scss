@@ -5,6 +5,7 @@ $grey: #0F0E0E;
 
 * {
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -13,6 +14,17 @@ body {
     font-family: 'Open Sans';
     font-size: 16px;
     height: 100vh;
+}
+
+#pageroot {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer {
+    margin-top: auto;
 }
 
 .hero-section {
@@ -28,13 +40,6 @@ body {
     @include headings {
         text-align: center;
     }
-}
-
-#pageroot {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
 }
 
 .infobox {
@@ -69,14 +74,28 @@ body {
     .cf-input, .cf-textarea, .cf-button {
         display: block;
         margin-top: 10px;
+        background-color: #3A3845;
+        color: white;
     }
-
+    
     .cf-input {
         border: none;
-        padding: 5px 10px 5px 10px;
+        padding: 5px 10px;
+    }
+    
+    .cf-textarea {
+        padding: 5px 10px;
+        font-family: 'Open Sans', sans-serif;
+        border: none;
+        width: 50%;
     }
 
-    .cf-textarea {
-        padding: 5px;
+    .cf-button {
+        border: none;
+        border-radius: 3px;
+        padding: 7px;
+        background-color: #00FFAB;
+        margin-bottom: 10px;
+        margin-top: 15px;
     }
 }
